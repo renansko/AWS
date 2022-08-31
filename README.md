@@ -69,3 +69,38 @@ __como escolher uma região:__
 __Availability Zone:__
 No minimo duas e no maximo 6.
 Cada zona de acessibilidade não dependendem uma da outra.
+
+___
+
+# IAM
+- Conta root é criada automaticamente
+- Usuarios são pessoas de sua organização que podem ser agrupadas 
+- Grupo pode ter somente pessoas
+- Usuarios não precisam pertencer a um grupo, e pode pertencer a varios grupos
+
+**JSON document** ``-> `` JSON que contem atribuição de permissões para um determinado Recurso (no caso IAM). 
+
+___segurança__ é uma boa pratica criar um novo usuario com a permissão de adm igual ao root, realizar o login nela e realizar suas implantações por ela_
+
+OBS: tipo de credencial:
+ - Senha: acesso ao Console de Gerenciamento da AWS
+
+![Imagem url para login novo IAM](/img/URL_conta_adm.jpeg)
+
+### IAM Policy
+- politica em nivel de grupo-
+- politica de operação
+- policita inline
+- Structure:
+
+``"Version": versão da politica``
+
+``"ID": Idendificador para a politica ``
+
+    "Statement": { 
+    "Sid": idendificador para o Statement
+    "Effect": qual o efeito essa politica vai permitir, "allow ou deny"
+    "Principal": "Account/user/role" de qual recurso essa politica vai ser aplicada
+    "Action": lista de ações que essa politica vai conseguir realizar
+    Resources: Lista de recursos que ações seram aplicadas
+    Condition: Condições para a politica
