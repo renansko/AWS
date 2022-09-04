@@ -104,3 +104,7 @@ OBS: tipo de credencial:
     "Action": lista de ações que essa politica vai conseguir realizar
     Resources: Lista de recursos que ações seram aplicadas
     Condition: Condições para a politica
+
+### IAM role
+
+- Dar permissões para serviços na AWS, alguns serviços necessitão de permissão para executar algumas determinadas tarefas.
