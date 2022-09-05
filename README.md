@@ -108,3 +108,29 @@ OBS: tipo de credencial:
 ### IAM role
 
 - Dar permissões para serviços na AWS, alguns serviços necessitão de permissão para executar algumas determinadas tarefas.
+
+# EC2
+
+Elastic Compute Cloud
+
+### EC2 User Data
+
+Bootstrapping é um script realizada na criação da sua instancia, para automatizar algumas tarefas.
+
+Uma instancia ec2 ao ser encerrada pode alterar seu IPV4 publico mas não o privado
+
+### Tipos de EC2
+
+- aws.amazon.com/ec2/instance-types/
+
+instances.vantage.sh #Compara instancias
+
+m5.2xlarge
+
+m = classe da instancia
+
+5 = geração
+
+2xlarge = tamanho da instancia
+
+ 
