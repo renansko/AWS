@@ -133,4 +133,20 @@ m = classe da instancia
 
 2xlarge = tamanho da instancia
 
- 
+### Security Groups
+
+Atuar como um firewall para  as instancias, permite e regula os acessos as portas de acesso.
+
+Controla tanto a 
+- saída "Outbound" network
+- entrada "Inbound" network
+
+### Portas 
+-   SSH - 22 (Segure Shell)
+-   FTP - 21 (File transfer Protocol)
+- SFTP - 22 (Secure File transfer protocol)
+- HTTP - 80 (Access unsecured websites)
+- HTTPS - (Access secured websites)
+RDP - 3389 (Remote desktop protocol) Windows
+
+
